@@ -1,0 +1,27 @@
+<% title "Specimens" %>
+
+<table>
+  <tr>
+    <th>Source</th>
+    <th>Assay Choice</th>
+    <th>Amplification</th>
+    <th>Control</th>
+    <th>Disposition</th>
+    <th>Failed</th>
+  </tr>
+  <% for specimen in @specimens %>
+    <tr>
+      <td><%=h specimen.source %></td>
+      <td><%=h specimen.assay_choice %></td>
+      <td><%=h specimen.amplification %></td>
+      <td><%=h specimen.control %></td>
+      <td><%=h specimen.disposition %></td>
+      <td><%=h specimen.failed %></td>
+      <td><%= link_to "Show", specimen %></td>
+      <td><%= link_to "Edit", edit_specimen_path(specimen) %></td>
+      <td><%= link_to "Destroy", specimen, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Specimen", new_specimen_path %></p>

@@ -1,0 +1,32 @@
+<% title "Specimen" %>
+
+<p>
+  <strong>Source:</strong>
+  <%=h @specimen.source %>
+</p>
+<p>
+  <strong>Assay Choice:</strong>
+  <%=h @specimen.assay_choice %>
+</p>
+<p>
+  <strong>Amplification:</strong>
+  <%=h @specimen.amplification %>
+</p>
+<p>
+  <strong>Control:</strong>
+  <%=h @specimen.control %>
+</p>
+<p>
+  <strong>Disposition:</strong>
+  <%=h @specimen.disposition %>
+</p>
+<p>
+  <strong>Failed:</strong>
+  <%=h @specimen.failed %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_specimen_path(@specimen) %> |
+  <%= link_to "Destroy", @specimen, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", specimens_path %>
+</p>

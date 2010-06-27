@@ -1,0 +1,28 @@
+<% form_for @specimen do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :source %><br />
+    <%= f.text_field :source %>
+  </p>
+  <p>
+    <%= f.label :assay_choice %><br />
+    <%= f.text_field :assay_choice %>
+  </p>
+  <p>
+    <%= f.label :amplification %><br />
+    <%= f.text_field :amplification %>
+  </p>
+  <p>
+    <%= f.label :control %><br />
+    <%= f.text_field :control %>
+  </p>
+  <p>
+    <%= f.label :disposition %><br />
+    <%= f.date_select :disposition %>
+  </p>
+  <p>
+    <%= f.label :failed %><br />
+    <%= f.check_box :failed %>
+  </p>
+  <p><%= f.submit "Submit" %></p>
+<% end %>

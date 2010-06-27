@@ -1,0 +1,15 @@
+one:
+  source: MyString
+  assay_choice: MyString
+  amplification: MyString
+  control: MyString
+  disposition: 2010-06-27
+  failed: false
+
+two:
+  source: MyString
+  assay_choice: MyString
+  amplification: MyString
+  control: MyString
+  disposition: 2010-06-27
+  failed: false
