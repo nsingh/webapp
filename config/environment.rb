@@ -21,7 +21,7 @@ Rails::Initializer.run do |config|
   # config.gem "aws-s3", :lib => "aws/s3"
   
   config.gem "authlogic"
-  config.gem "spreadsheet"
+  #config.gem "spreadsheet" date.new problem
   config.gem "sqlite3-ruby", :lib=> "sqlite3"
 
 
